@@ -1,0 +1,26 @@
+{
+  "name": "gulp-basics",
+  "version": "1.0.0",
+  "description": "Template for Frontend work. Includes SASS/Pug compilation, server (localhost), livereload, images optimization, CSS minification",
+  "main": "gulpfile.js",
+  "scripts": {},
+  "author": "Fedir Kopakov",
+  "license": "MIT",
+  "devDependencies": {
+    "adaptive-pixel-perfect": "^0.5.8",
+    "browser-sync": "^2.12.8",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-filter": "^5.0.0",
+    "gulp-image": "^4.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
+    "gulp-sourcemaps": "^2.6.4",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {}
+}

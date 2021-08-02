@@ -1,0 +1,93 @@
+{
+  "globalSession": {
+    "lang": "en_US",
+    "floatPanels": true,
+    "floatPanelsAlign": "top",
+    "pages": [
+      {
+        "type": "page",
+        "urn": "index.html",
+        "sub": [
+          {
+            "type": "group",
+            "name": "Authorization",
+            "sub": [
+              {
+                "type": "page",
+                "urn": "login.html"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "resolutions": [
+      {
+        "w": 1920,
+        "h": "auto"
+      },
+      {
+        "w": 1280,
+        "h": "auto"
+      },
+      {
+        "w": 992,
+        "h": "auto"
+      },
+      {
+        "w": 768,
+        "h": "auto"
+      },
+      {
+        "w": 480,
+        "h": "auto"
+      },
+      {
+        "w": 320,
+        "h": "auto"
+      }
+    ],
+    "designScreenshots": [],
+    "designScreenshotsFoldersUncollapsed": [
+      "ff"
+    ],
+    "designScreenshotsRelatedResolutionAndPage": {
+
+    }
+  },
+  "sessionGroupSynchronizations": [
+    {
+      "name": "casual",
+      "synchroParams": [
+        "iframeSize",
+        "iframePosition",
+        "resolutions",
+        "pages",
+        "showBottomSpace",
+        "showPageProofsOrDesign"
+      ],
+      "data": {
+        "pages": {
+          "currentPage": "public/questor-it.ru/www/case-dostaevsky.html"
+        },
+        "resolutions": {
+          "currentResolution": {
+            "w": 768,
+            "h": "auto"
+          },
+          "showPageProofsOrDesign": 1
+        },
+        "showPageProofsOrDesign": 0,
+        "showBottomSpace": true,
+        "iframePosition": {
+          "left": 0,
+          "top": 0
+        },
+        "iframeSize": {
+          "w": null,
+          "h": null
+        }
+      }
+    }
+  ]
+}

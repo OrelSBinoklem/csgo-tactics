@@ -1,0 +1,351 @@
+/*========================================== Redefinition of the framework ===========================================*/
+/*====================================================== Global ======================================================*/
+html, body, a, button, input, textarea
+  font: 13px Arial, Helvetica, sans-serif
+
+.wrapper
+  overflow: hidden
+  position: relative
+  min-height: 100vh !important
+  height: auto
+  min-width: 320px
+  width: 100%
+
+.center
+  margin: 0 auto
+  padding: 0 15px
+  position: relative
+  width: 100%
+
+.clearfix:before
+  content: " "
+  display: table
+
+.clearfix:after
+  content: " "
+  clear: both
+  display: table
+
+/*===================================================== Modules ======================================================*/
+
+.header
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 4
+  .center
+    display: flex
+    align-items: flex-start
+    padding-left: 0
+    padding-right: 0
+    height: 45px
+  .lang
+    margin-left: 113px
+
+.top-menu-mob
+  position: absolute
+  top: 0
+  right: 0
+  display: none
+  flex-direction: column
+  //max-height: 100vh
+  height: 100vh
+  overflow: auto
+  background-color: #36444f
+
+.logo
+  margin-top: 30px
+  padding: 15px
+  color: #c89010
+  position: relative
+  display: flex
+  align-items: center
+  font: 14px/18px DP, sans-serif
+  img
+    width: 150px
+    height: 106px
+    max-width: none
+  span
+    text-align: center
+
+.lang
+  padding-left: 11px
+  padding-bottom: 17px
+  display: flex
+  align-items: flex-end
+  position: relative
+  width: 45px
+  height: 45px
+  background-color: rgba(56, 71, 85, 0.32)
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out
+  font-size: 14px
+  &:hover
+    background-color: rgba(255, 255, 255, 0.08)
+  &__btn
+    position: relative
+    font: bold 16px/14px DP, sans-serif
+    text-transform: capitalize
+    color: rgba(255, 255, 255, 0.5)
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 0.3s ease-in-out
+  &:hover &__btn
+    color: #fff
+  &:hover &__btn:before
+    background-color: #fff
+  &__menu
+    position: absolute
+    top: 100%
+    left: 0
+    right: 0
+    list-style: none
+    display: none
+  &__menu:before
+    content: ""
+    position: absolute
+    top: 0
+    right: -1px
+    height: calc(100% + 31px)
+    border-left: 1px solid #7A819B
+  &__menu:after
+    content: ""
+    position: absolute
+    top: -1px
+    left: 0
+    right: 0
+    border-bottom: 1px solid #7A819B
+  &:hover &__menu
+    display: block
+  &__link
+    position: relative
+    padding-left: 11px
+    display: flex
+    align-items: center
+    height: 60px
+    font: bold 14px/14px DP, sans-serif
+    text-transform: capitalize
+    color: #fff
+    border-bottom: 1px solid #7A819B
+    background-color: rgba(56, 71, 85, 0.32)
+  &__link:hover
+    background-color: rgba(255, 255, 255, 0.08)
+  &__item
+    font: bold 16px/14px DP, sans-serif
+    text-transform: capitalize
+    color: #fff
+  &__item.active
+    padding-left: 11px
+    display: flex
+    align-items: center
+    height: 60px
+    border-bottom: 1px solid #7A819B
+    font-size: 14px
+    background-color: rgba(56, 71, 85, 0.32)
+
+.btn-burger
+  position: relative
+  border: none
+  padding: 0
+  margin: 0 0 0 auto
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  width: 45px
+  height: 45px
+  color: #fff
+  font-size: 0
+  line-height: 0
+  opacity: 0.8
+  z-index: 2
+  &__icon
+    margin-top: 18px
+    display: block
+    width: 20px
+    height: 10px
+    font-size: 0
+    line-height: 0
+  svg
+    fill: currentColor
+  &:hover
+    background-color: rgba(255, 255, 255, 0.4)
+
+.btn-zoom
+  position: fixed
+  right: 0
+  bottom: 140px
+  border: none
+  padding: 0
+  margin: 0 0 0 auto
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  width: 45px
+  height: 45px
+  background-color: #c89010
+  color: #fff
+  font-size: 0
+  line-height: 0
+  opacity: 0.8
+  &__icon
+    margin-top: 14px
+    display: block
+    width: 20px
+    height: 10px
+    font-size: 0
+    line-height: 0
+  svg
+    fill: currentColor
+  //&:hover todo только на ПК версии надо сделать
+    background-color: rgba(255, 255, 255, 0.6)
+  &._active
+    background-color: rgba(255, 255, 255, 0.8)
+    color: #36444f
+
+.btn-zoomx
+  position: fixed
+  right: 0
+  bottom: 95px
+  border: none
+  padding: 0
+  margin: 0 0 0 auto
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  width: 45px
+  height: 45px
+  background-color: #c89010
+  color: #fff
+  font-size: 0
+  line-height: 0
+  opacity: 0.8
+  &__icon
+    margin-top: 14px
+    display: block
+    width: 20px
+    height: 10px
+    font-size: 0
+    line-height: 0
+    transform: scale(1, 0.75)
+  svg
+    fill: currentColor
+  //&:hover todo только на ПК версии надо сделать
+    background-color: rgba(255, 255, 255, 0.6)
+  &._active
+    background-color: rgba(255, 255, 255, 0.8)
+    color: #36444f
+
+.btn-zoom-main
+  position: fixed
+  right: 0
+  bottom: 0
+  border: none
+  padding: 0
+  margin: 0 0 0 auto
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  width: 45px
+  height: 45px
+  background-color: #c89010
+  color: #fff
+  font-size: 0
+  line-height: 0
+  opacity: 0.8
+  &__icon
+    margin-top: 14px
+    display: block
+    width: 20px
+    height: 10px
+    font-size: 0
+    line-height: 0
+  svg
+    fill: currentColor
+  //&:hover todo только на ПК версии надо сделать
+    background-color: rgba(255, 255, 255, 0.6)
+  &._active
+    background-color: rgba(255, 255, 255, 0.8)
+    color: #36444f
+
+.top-menu
+  padding-top: 45px
+  list-style: none
+  width: 310px
+  &__mob-burger
+    display: flex
+    background-color: #c89010
+  &__mob-burger:hover
+    background-color: #c89010
+  &__link
+    border-bottom: 1px solid #9FAFBE
+    color: #fff
+    display: flex
+    align-items: flex-end
+    font: bold 16px/14px 'DP', sans-serif
+    padding-left: 20px
+    padding-bottom: 15px
+    position: relative
+    height: 45px
+    text-transform: none
+    max-width: 320px
+  &__item:last-child &__link
+    border-bottom: 3px solid #9FAFBE
+  &__item:hover &__link
+    background-color: rgba(255, 255, 255, 0.08)
+
+.select-map
+  position: fixed
+  top: 0
+  right: 0
+  width: 310px
+  z-index: 1
+  .jq-selectbox
+    width: calc(100% - 45px)
+    background-color: #eee
+  .jq-selectbox__select-text
+    padding: 15px 20px
+    font: bold 16px/14px 'DP', sans-serif
+    text-align: center
+    color: #36444f
+  .jq-selectbox__trigger
+    position: absolute
+    top: 0
+    right: 0
+    width: 34px
+    height: 100%
+  .jq-selectbox__trigger-arrow
+    position: absolute
+    top: 19px
+    right: 12px
+    width: 0
+    height: 0
+    border-top: 5px solid #36444f
+    border-right: 5px solid transparent
+    border-left: 5px solid transparent
+  .jq-selectbox__dropdown
+    right: 0
+    background-color: #eee
+  .jq-selectbox li, .jq-select-multiple li
+    border-bottom: 1px solid #aaa
+    padding: 15px 20px
+    font: bold 16px/14px 'DP', sans-serif
+    color: #36444f
+    text-align: center
+    &.selected
+      background-color: #ccc
+
+.video-container
+  overflow: hidden
+  position: relative
+  width: 100%
+  &:after
+    padding-top: 56.25%
+    display: block
+    content: ''
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+/*====================================================== Atoms =======================================================*/

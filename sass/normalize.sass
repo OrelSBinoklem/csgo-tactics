@@ -1,0 +1,109 @@
+@import "mixing.sass"
+
+*
+  box-sizing: border-box
+  border: 0
+  outline: 0
+  padding: 0
+  margin: 0
+  vertical-align: baseline
+
+table, caption, tbody, tfoot, thead, tr, th, td
+  background: transparent
+  border: 0
+  font-size: 100%
+  outline: 0
+  padding: 0
+  margin: 0
+
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section
+  display: block
+  font-size: 100%
+
+html
+  -webkit-text-size-adjust: none
+
+a
+  color: #000
+  vertical-align: baseline
+  text-decoration: none
+  transition: color 0.3s ease-in-out
+  &:hover, &:focus, &:active
+    outline: none
+    text-decoration: none
+
+a[href^="tel:"]
+  cursor: default
+
+h1, h2, h3, h4, h5, h6
+  font-size: 100%
+  font-weight: 400
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+img
+  max-width: 100%
+  vertical-align: middle
+
+em
+  font-style: normal
+
+button
+  cursor: pointer
+  &:hover, &:focus, &:active
+    outline: none
+
+textarea
+  resize: none
+  overflow-y: auto
+
+input, textarea, button
+  background: none
+
+input, select
+  vertical-align: middle
+
+input[type="radio"]
+  vertical-align: text-bottom
+
+input[type="submit"]
+  cursor: pointer
+
+input[type="checkbox"]
+  vertical-align: bottom
+
+input, textarea, select
+  box-sizing: border-box
+  box-shadow: none
+  border-radius: 0
+  &:hover, &:focus, &:active
+    outline: none
+
+$ColorPlaceholder: #b3b3b3
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder
+  color: $ColorPlaceholder
+  opacity: 1
+
+input:-moz-placeholder
+  color: $ColorPlaceholder
+  opacity: 1
+  
+input::-moz-placeholder,
+textarea::-moz-placeholder
+  color: $ColorPlaceholder
+  opacity: 1
+  
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder
+  color: $ColorPlaceholder !important
+  opacity: 1
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder
+  color: $ColorPlaceholder !important
+  opacity: 1
