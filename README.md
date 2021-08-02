@@ -1,17 +1,8 @@
-Elemertaly build for gulp
-
-## Install
-
-```bash
-
-```
-
-
 ## Release Notes
 
 | Release | Notes |
 | --- | --- |
-| 0.0.0 | Pre alpha release |
+| 0.0.0 | Alpha release |
 
 ## Licence
 
